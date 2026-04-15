@@ -11,4 +11,3 @@ docker login
 
 echo "🏗️ Building Docker image..."
 docker build -t $DOCKER_USERNAME/$IMAGE_NAME:$TAG .
-

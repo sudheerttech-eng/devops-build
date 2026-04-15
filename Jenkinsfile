@@ -8,10 +8,10 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
+
+        stage('Checkout') {
             steps {
-                git branch: "${env.BRANCH_NAME}",
-                url: 'https://github.com/sudheerttech-eng/devops-build.git'
+                checkout scm
             }
         }
 
